@@ -97,8 +97,8 @@ if __name__ == '__main__':
   clusters = len(np.unique(y))
   print(clusters)
 
-  clf = KMeans(K=clusters, n_iters=50)
-  y_pred = clf.predict(X)
+  model = KMeans(K=clusters, n_iters=50)
+  y_pred = model.predict(X)
 
-  clf.plot_clusters()
-  clf.plot_distortion_errors()
+  model.plot_clusters()
+  model.plot_distortion_errors()
